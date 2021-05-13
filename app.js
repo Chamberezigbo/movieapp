@@ -21,7 +21,7 @@ app.get('/result', (req,res) => {
        })
        
 })
-app.get('', (req, res) => {
+app.get('/', (req, res) => {
        res.render('search')
 })
 app.listen(port, () => console.log(`Server started at port ${port}`))
