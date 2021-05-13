@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const request = require('request');
-const port = process.env.PORT || 3500;
+const port = process.env.PORT || 3000;
 
 
 app.set('views', path.join(__dirname,'views'))
