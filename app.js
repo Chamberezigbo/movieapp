@@ -1,10 +1,8 @@
-const { error } = require('console');
-const { response, query } = require('express');
 const express = require('express');
 const app = express();
 const path = require('path');
 const request = require('request');
-const port = 3000;
+const port = process.env.PORT || 3500;
 
 
 app.set('views', path.join(__dirname,'views'))
@@ -23,7 +21,7 @@ app.get('/result', (req,res) => {
        })
        
 })
-app.get('/search', (req, res) => {
+app.get('', (req, res) => {
        res.render('search')
 })
-app.listen(port, () => console.log(`Example app listening on port port!`))
+app.listen(port, () => console.log(`Server started at port ${port}`))
