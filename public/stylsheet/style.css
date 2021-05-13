@@ -1,0 +1,25 @@
+#header {
+       margin-top: 20%;
+}
+body{
+       background-color: #f5f5f5;
+}
+.card-title {
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card {
+       margin-left: 12.5%;
+}
+card-img {
+       height: 24rem;
+}
+#searcHeader {
+       margin-left: 12.5%;
+       margin-top: 3rem;
+       margin-bottom: 2rem;
+       font-family: monospace;
+       font-weight: 700;
+}
+span {
+       color: gray;
+}

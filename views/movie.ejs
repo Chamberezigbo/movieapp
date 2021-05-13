@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Movie App</title>
+       <link rel="stylesheet" href="res/bootstrap-5.0.0-beta2-dist/css/bootstrap.css" />
+       <link rel="stylesheet" href="/stylsheet/style.css">
+</head>
+<body>
+     
+       <h1 class="text-capitalize" id="searcHeader"> search result <span>></span><%= searchQuery.toUpperCase()%> </h1>
+
+       <% data["results"].forEach((movie) => { %>
+              <div class="card mb-5 w-75">
+                     <div class="row no-gutters">
+                            <div class="col-md-4">
+                                   <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2<%= movie["poster_path"]%>" class="card-img img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                   <div class="card-body">
+                                          <h2 class="card-body text-capitalize"><%= movie["original_title"]%></h2>
+                                          <hr>
+                                          <p class="card-text text-capitalize"><%= movie["overview"]%></p>
+                                          <hr>
+                                          <p class="card-text text-capitalize"><b>date published:</b><%= movie["release_date"]%></p>
+                                          <p class="card-text text-capitalize"><b>total vote:</b><%= movie["vote_count"]%></p>
+                                          <p class="card-text text-capitalize"><b>average rating:</b><%= movie["vote_average"]%></p>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+      <% }) %>
+
+      
+</body>
+</html>
